@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kare Hesaplama</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <form>
+            sayı:<input type="text" id="sayi">
+            karesi:<span id="sonuc"></span><br>
+            <input type="button" value="Hesapla" onclick="karesi()">
+
+        </form>
+
+       <script>
+            function karesi(){
+                
+                var sayi=Number(document.getElementById("sayi").value)
+                var karesi=Number(sayi*sayi)
+                document.getElementById("sonuc").innerHTML=karesi
+            }
+       </script>
+    
+
+
+    </body>
+</html>
